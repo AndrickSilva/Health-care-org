@@ -1,0 +1,73 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 10 May, 2021, 11:35:29 PM
+    Author     : AERAL
+*/
+/*body{
+    text-align: center;
+    font-family: Source Sans Pro, Arial, sans-serif;
+}
+div{
+    border: solid #5887ce 2px;
+    color: #3498db;
+    width: 20%;
+    padding: 6%;
+    margin-left: 34%;
+    text-align: center;
+}
+p{
+    color: grey;
+    border: solid grey 2px;
+    width: 20%;
+    padding: 6%;
+    margin-left: 34%;
+    text-align: center;
+}
+h2{
+    padding-top: 6%;
+}*/
+body {
+    background: skyblue;
+    display: flex;
+    height: 100vh;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    padding: 0 50px;
+    font-family: Source Sans Pro, Arial, sans-serif;
+}
+video {
+    max-width: calc(43% - 100px);
+    margin: 0 50px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    padding: 0;
+    background: whitesmoke;
+}
+.copy {
+    position: fixed;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 16px;
+    color: black;
+    font-weight: bold;
+}
+.simptoms{
+    border: solid #5887ce 2px;
+    color: #3498db;
+    width: 10%;
+    padding-top: 0%;
+    padding: 1%;
+    margin-left: 0%;
+    margin-top: 0%;
+    text-align: center;
+    color: #252422;
+}
+h2{
+    color: black;
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Health Care Search</title>
+        <link rel="stylesheet" href="css/search.css" />
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+        <script>
+            function showCustomer(str)
+            {
+                var xmlhttp;
+                if (str == "")
+                {
+                    document.getElementById("txtHint").innerHTML = "";
+                    return;
+                }
+                if (window.XMLHttpRequest)
+                {// code for IE7+, Firefox, Chrome, Opera, Safari
+                    xmlhttp = new XMLHttpRequest();
+                } else
+                {// code for IE6, IE5
+                    xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+                }
+                xmlhttp.onreadystatechange = function ()
+                {
+                    if (xmlhttp.readyState == 4 && xmlhttp.status == 200)
+                    {
+                        document.getElementById("D_Info1").innerHTML = xmlhttp.responseText;//gets response data as string
+                    }
+                }
+                xmlhttp.open("GET", "retrieve.jsp?q=" + str, true);
+                xmlhttp.send();
+            }
+        </script>
+    </head>
+    <body>
+
+        <a id="Home" href="home.html" >&laquo; Home</a>
+        <a href="Contact%20US.html" class="next">Contact Us &raquo;</a>
+
+        <form style="position: relative;" method="GET" action="redirect.jsp">
+            <img src="heart.jpg" />
+            <div style="position: absolute; right: 190px; top: 150px;"> 
+                <h1>Enter your symptoms:</h1>
+
+                <label for="gsearch">Symptoms:</label>
+                <input type="search" placeholder="Enter your simptoms..."style="height:40px" id="gsearch" name="gsearch">
+
+                <input type="submit">
+            </div>
+        </form>
+        <p><b>Medical store</b></p>
+        <a  href="https://www.medlife.com/" target="_blank">
+            <img id="img1" alt="Medical store" src="pharmaclogo1.jpg" width="180" ></a>
+        <br>
+        <br>
+        <br>
+        
+        <div style="padding: 25px; border: 1px #3498db ridge; background-color: azure">
+            <p>Doctor Information:</p>
+            <div style="margin: 10px;">  
+                <select style="padding: 5px" name="speciality" onchange="showCustomer(this.value)">
+                <option>-Doctor-</option>
+                <option value="tooth specialist">Tooth specialist</option>
+                <option value="General physician">General physician</option>
+                <option value="Orthopedic">Orthopedic</option>
+                <option value="Neurology and respiratory">Neurology & respiratory</option>
+                <option value="Cardiologist">Cardiologist</option>        
+            </select>
+            </div>
+            <br>
+            <div id="D_Info1" style="margin: 30px; background-color: #1B99D4;"></div>
+        </div> 
+        
+        <br>
+        <br>
+        <br>
+        <footer>
+            <div class="copyright">
+                <p class="foot">&copy 2013 - Organisation</p>
+            </div>
+            <div class="social">
+                <a id="c" href="Contact%20US.html" class="support">Contact Us</a>
+                <a id="c" href="https://www.facebook.com/" class="face">f</a>
+                <a id="c" href="https://twitter.com/?lang=en" class="tweet">t</a>
+                <a id="c" href="https://www.linkedin.com/login" class="linked">in</a>
+            </div>
+        </footer>
+        <div class="loader-wrapper">
+            <span class="loader"><span class="loader-inner"></span></span>
+        </div>
+
+        <script src= "js/start.js"></script>
+    </body>
+</html>

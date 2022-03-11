@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head><title>Login Forms</title>
+  <link rel="stylesheet" href="css/start.css" />
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+</head>
+<body>
+
+  <a href="home.html" class="previous">&laquo; Previous</a>
+  <a href="search.html" class="next">Next &raquo;</a>
+
+<div class="abc">
+<div id='form1'>
+<form id="form" action="./SignUpServlet" method="get">
+<fieldset style="background-color:rgb(252, 252, 252);">
+<legend><b>LOGIN IN</b></legend>
+
+<p>Username:
+<input type="text" id="username" placeholder="Enter username" name="userName"> </br> <span class="error_form" id="username_error_message"></span>
+</p>
+
+<p>Password:
+<input type="password" id="password" placeholder="Enter password" name="password"> </br> <span class="error_form" id="password_error_message"></span>
+</p>
+
+<p>Re-enter Pass:
+    <input type="password" id="form_retype_password" placeholder="confirm password" name="password1"> </br> <span class="error_form" id="retype_password_error_message"></span>
+</p>
+<br/>
+
+<p>Personal Details:</p>
+<label>Age:<input type="number" id="form_age" placeholder="Enter age" name="age"></label> </br> <span class="error_form" id="age_error_message"></span>
+<br/>
+<br/>
+Gender:
+<input id="female" type="radio" name="gender" value="f">
+<label for="female">Female</label>
+
+<input id="male" type="radio" name="gender" value="m">
+<label for="male">Male</label>
+
+<input id="other" type="radio" name="gender" value="o">
+<label for="others">Others</label>
+<br/>
+<br/>
+<br/>
+<p> Contact Details:</p>
+<label>Email:<br />
+<input type="email" id="form_email" placeholder="Enter email" name="email"></label></br> <span class="error_form" id="email_error_message"></span>
+<br/>
+<label>Mobile:<br />
+<input type="number" id="form_mobile" placeholder="Enter mobile number" name="mobile"></label> </br> <span class="error_form" id="mobile_error_message"></span>
+<br/>
+<label>Telephone:<br />
+<input type="number" id="form_telephone" placeholder="Enter telephone number" name="telephone"></label></br> <span class="error_form" id="telephone_error_message"></span>
+<br/>
+<input type="submit" value="Submit" > </br>
+</br>
+</fieldset>
+</form>
+</div>
+
+<h1><b> OR </b></h1>
+
+<div id='form2'>
+    <form id="form2" action="Login.jsp" method="post">
+<fieldset style="background-color:rgb(252, 252, 252);">
+<legend><b>SIGN UP</b></legend>
+<p>Username:
+<input type="text" id="usernamea" placeholder="Enter username" name="usernamea"> </br> <span class="error_form" id="username_message"></span>
+</p>
+
+<p>Password:
+<input type="password" id="passworda" placeholder="Enter password" name="passworda"> </br> <span class="error_form" id="password_message"></span>
+</p>
+
+<p>Re-enter Pass:
+<input type="password" id="form_retype_passworda" placeholder="confirm passworda"> </br> <span class="error_form" id="retype_password_message"></span>
+</p>
+<input type="submit" id="Submita">
+</fieldset>
+</form>
+</div>
+</div>
+
+</br>
+</br>
+    <div class="fixed-footer">
+        <div class="container">Copyright &copy; 2016 Your Company</div>        
+    </div>
+
+    <div class="loader-wrapper">
+      <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+    <script src= "js/start.js"></script>
+</body>
+</html>

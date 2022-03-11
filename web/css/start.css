@@ -1,0 +1,182 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url('women.jpg');
+    background-repeat: no-repeat;
+    background-size: 1700px 1200px;
+    }
+  
+  a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 8px;
+  }
+  
+  a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .previous {
+    background-color: #a09c9c;
+    color: black;
+    font:bolder;
+    font-size: large;
+    padding: 10px;
+    margin: 30px 5px 1px;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  .next {
+    background-color:#005A9C;
+    color: white;
+    font:bolder;
+    font-size: large;
+    padding: 10px;
+    margin: 30px 5px 1px;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  .abc{
+    display: grid;
+    grid-template-columns: 600px 300px 400px;
+    
+  }
+  #form1{
+   width: 550px;
+   height: 450px;
+   margin: 8% 5% 10%;
+   padding: 0px 0px 450px;
+   float:left;}
+  
+  h1{
+  margin: 100% 50% 10%;
+  color: #005A9C;}
+  
+  #form2{
+  width: 310px;
+  float: right;
+  margin: 30% 5% 10%;
+  padding:1%;}
+  
+  input:hover {
+  background-color: #e9eef1;}
+  
+  input:active {
+  background-color: #E0FFFF;}
+  
+  input[type=text],[type=email],[type=password],[type=number],textarea {
+    width: 80%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius:20px;}
+  
+  label{
+  padding: 10px 10px 10px 0;
+  display: inline-block;
+  }
+  
+  input[type=submit]{
+    background-color: #005A9C;
+    border: none;
+    color: white;
+    padding: 10px 30px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+  }
+  input:hover[type=submit]{
+  background: #1c4962;}
+  
+  .fixed-footer{
+          width: 100%;
+          position: fixed;        
+          background: #333;
+          padding: 10px 0;
+          color: #fff;
+      }
+  .fixed-footer{
+  bottom: 0;}
+  span{
+    color: red;
+    margin: 10px 90px 0px;
+    font-weight:10px;
+   }
+  
+  #age_error_message{
+    color: red;
+    margin: 10px 50px 0px;
+  }
+  
+  #email_error_message{
+    color: red;
+    margin: 10px 40px 0px;
+  }
+  
+  #mobile_error_message{
+    color: red;
+    margin: 10px 20px 0px;
+  }
+  
+  #telephone_error_message{
+    color: red;
+    margin: 10px 10px 0px;
+
+  }
+  
+  #username_message{
+    color: red;
+    margin:5px 10px 0px;
+  }
+  
+  #password_message{
+    color: red;
+    margin:5px 10px 0px;
+  }
+  
+  #retype_password_message{
+    color: red;
+    margin:5px 10px 0px;
+  }
+  
+  .loader-wrapper {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: #5887ce;
+      display:flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .loader {
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      position: relative;
+      border: 4px solid #Fff;
+      animation: loader 2s infinite ease;
+    }
+    .loader-inner {
+      vertical-align: top;
+      display: inline-block;
+      width: 100%;
+      background-color: #fff;
+      animation: loader-inner 2s infinite ease-in;
+    }
+    @keyframes loader {
+      0% { transform: rotate(0deg);}
+      25% { transform: rotate(180deg);}
+      50% { transform: rotate(180deg);}
+      75% { transform: rotate(360deg);}
+      100% { transform: rotate(360deg);}
+    }
+    @keyframes loader-inner {
+      0% { height: 0%;}
+      25% { height: 0%;}
+      50% { height: 100%;}
+      75% { height: 100%;}
+      100% { height: 0%;}
+    }
+  
