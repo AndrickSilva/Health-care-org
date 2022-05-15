@@ -7,6 +7,7 @@ package data;
 
 import static java.lang.System.out;
 import java.sql.Connection;
+import java.sql.Date;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -53,10 +54,10 @@ public class DBhandler {
         return false;
     }
 
-    public void SubmitFeedback(String name, String date, String feedback) throws SQLException {
-        PreparedStatement statment = conn.prepareStatement("insert into feedback(name, date, feedback) values(?,?,?)");
+    public void SubmitFeedback(String name, Date sqldate, String feedback) throws SQLException {
+        PreparedStatement statment = conn.prepareStatement("insert into feedback1(name, datee, feedback_msg) values(?,?,?)");
         statment.setString(1, name);
-        statment.setString(2, date);
+        statment.setDate(2, sqldate);
         statment.setString(3, feedback);
 
         statment.executeUpdate();
