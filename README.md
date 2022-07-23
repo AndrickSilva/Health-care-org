@@ -3,6 +3,6 @@
 [Live Preview](https://health-care-website000.netlify.app/)
 ---
 <br>
-<img src="public/image.png">
+<img src="web/Images/image.png">
 
-<b>Note:</b> 
+<b>Note:</b> This project was done during the initial stage of learning web development.
